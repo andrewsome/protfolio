@@ -2,19 +2,19 @@ const galleryData = [{
   title: 'The Weather Forecast',
   description: 'The Weather Forecast, its a progressive web app that let user know the tenperature and weather of current location',
   stacks: ['HTML5', 'CSS3', 'VanillaJS', 'API', 'Npm'],
-  img: 'weather1.jpg',
+  img: 'images/weather1.jpg',
   url: 'https://app-weather-simple.herokuapp.com'
 },{
   title: 'Event Registration App',
   description: 'Event Registration App, it allow you regist any event for a olympics game by adding event name and descriptions, such as football, basketball,',
   stacks: ['HTML5', 'CSS3', 'VanillaJS', 'Nodejs', 'Express', 'MongoDB', 'Mongoose', 'Npm'],
-  img: 'eventmaker.jpg',
+  img: 'images/eventmaker.jpg',
   url: 'https://demo-mongdb-mongoose.herokuapp.com',
 },{
   title: 'AutoComplete Demo',
   description: 'A demo that use throttling and debouncing, to reduce API call times for search engine, in this case is for address search.',
   stacks: ['HTML5', 'CSS3', 'VanillaJS', 'API'],
-  img: 'autocomplete.jpg',
+  img: 'images/autocomplete.jpg',
   url: 'https://autocomplete-demostration.herokuapp.com/'
 }];
 

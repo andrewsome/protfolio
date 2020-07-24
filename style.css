@@ -296,7 +296,7 @@
 .parallax {
   height: 30vh;
   margin: 20px;
-  background: url('knife-sharpening.jpg') no-repeat;
+  background: url('./images/knife-sharpening.jpg') no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
