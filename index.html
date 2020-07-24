@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <title>Andrew</title>
+</head>
+
+<body>
+  <mian>
+    <!-- Nav bar -->
+    <nav class="navbar">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">&lsaquo;Andrew /&rsaquo;</label>
+      <ul class="options">
+        <li class="tab"><a class="tab-btn" href="#intro">About myself</a></li>
+        <li class="tab"><a class="tab-btn" href="#projects">Poject</a></li>
+        <li class="tab"><a class="tab-btn" href="#interests">Interests</a></li>
+      </ul>
+    </nav>
+    <!-- Nav bar end -->
+
+    <!-- side navbar -->
+    <ul class="side-navbar">
+      <li><a href="#intro"><i class="far fa-circle"></i></a></li>
+      <li><a href="#projects"><i class="far fa-circle"></i></a></li>
+      <li><a href="#interests"><i class="far fa-circle"></i></a></li>
+    </ul>
+    <!-- side navbar end -->
+
+    <!-- light switch -->
+    <ul class="switch">
+      <li>
+        <span>Dark</span>
+        <span>Light</span>
+      </li>
+    </ul>
+    <!-- light switch end -->
+    <section class="intro" id="intro">
+      <h1>This is Andrew</h1>
+      <h2>a full stack developer</h2>
+      <video src="Andrew.mp4"></video>
+    </section>
+
+    <section class="projects" id="projects">
+      <h1>My projects</h1>
+      <div id="root"></div>
+    </section>
+
+    <div class="parallax">
+      <h1>Beside on programming, This is what i love to do</h1>
+    </div>
+    <section class="interests" id="interests">
+      <div class="carousel" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell">
+          <img src="./sharpening-knife (1).png" alt="tuto1">
+        </div>
+        <div class="carousel-cell">
+          <img src="./sharpening-knife (2).png" alt="tuto2">
+        </div>
+        <div class="carousel-cell">
+          <img src="./sharpening-knife (3).png" alt="tuto3">
+        </div>
+        <div class="carousel-cell">
+          <img src="./sharpening-knife (4).png" alt="tuto4">
+        </div>
+      </div>
+    </section>
+  </mian>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+    integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.4.2/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+  <script src="app.entery.js" type="text/babel"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

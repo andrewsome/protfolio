@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.switch {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 10;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.switch.active {
+  background: white;
+  border-color: white;
+}
+
+.switch.active li {
+  transform: translateY(-30px);
+}
+
+.switch li {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.switch li span {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.switch li span:nth-child(1) {
+  background: black;
+  color: white;
+}
+
+/* side navbar */
+.side-navbar {
+  position: fixed;
+  top: 50%;
+  right: 2%;
+  z-index: 10;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.side-navbar li {
+  margin: 10px;
+}
+
+.side-navbar li a i {
+  color: black;
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+.side-navbar li a i:hover {
+  background: black;
+  transition: 0.5s;
+}
+
+.side-navbar.dark li a i {
+  color: white;
+}
+
+.side-navbar.dark li a i:hover {
+  background: white;
+}
+/* side navbar end */
+
+/* navbar */
+.navbar {
+  background: black;
+  height: 80px;
+  width: 100vw;
+}
+
+.logo {
+  color: white;
+  font-size: 50px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.options {
+  float: right;
+  margin-right: 20px;
+}
+
+.tab {
+  display: inline;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+.tab-btn {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.tab-btn:hover {
+  background: blueviolet;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-left: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+/* navbar end */
+
+/* dark theme */
+.intro.dark,
+.projects.dark,
+.interests.dark,
+.carousel.dark {
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
+/* dark theme end */
+
+/* intro sections */
+.intro {
+  height: 100vh;
+  padding: 40px;
+}
+
+.intro h1 {
+  position: absolute;
+  text-align: center;
+  font-size: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro h2 {
+  position: absolute;
+  text-align: center;
+  font-size: 60px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* intro section end  */
+
+/* project section */
+.projects {
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.projects h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 40px;
+}
+
+.projects-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: white;
+}
+
+/* cards */
+.flip-card {
+  margin: 10px;
+  background-color: transparent;
+  width: 420px;
+  height: 320px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 10px;
+  background: #252525;
+}
+
+.flip-card-front img {
+  width:400px;
+  height:300px;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h3 {
+  font-size: 25px;
+  margin: 10px;
+}
+
+.flip-card-back h4{
+  margin: 15px;
+}
+
+.flip-card-back a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  color: white;
+  box-shadow: inset 0 -2px 0 blueviolet;
+}
+
+.flip-card-back a:hover {
+  box-shadow: inset 0 -20px 0 blueviolet;
+  transition: 0.5s;
+}
+
+.skill-stacks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-stacks p {
+  background: black;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* cards end */
+/* projects end */
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.carousel-cell {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* interests section */
+.interests {
+  height: 70vh;
+}
+
+.parallax {
+  height: 30vh;
+  margin: 20px;
+  background: url('knife-sharpening.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.parallax h1 {
+  padding: 13vh;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.parallax.dark h1 {
+  color: white;
+}
+/* interests section end */
+
+@media (max-width: 952px) {
+  .logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .tab-btn {
+    font-size: 16px;
+  }
+  .projects {
+    height: 130vh;
+  }
+}
+
+@media (max-width: 780px) {
+  .logo {
+    font-size: 30px;
+  }
+  .options {
+    display: none;
+  }
+}
